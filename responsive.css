@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100&display=swap");
+
+
+main {
+  border: 3px solid #ffffff;
+  margin: auto;
+}
+
+/* Code for all screen sizes */
+
+
+/* BEGIN MOBILE RULES */
+@media only screen and (max-width: 768px) {
+  /* Code for mobile phones only: */
+
+  /* Mobile label */
+  main::before {
+    content: 'Mobile';
+    background-color: #c8787888;
+  }
+  .the {
+    color: white;
+    font-size: 20px;
+    font-family: 'Grenze', serif;
+  }
+  .main {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    border-style:solid;
+    border: 30px;
+    background-color:black;
+    color: white;
+    font-size: 85px;
+    font-family: 'Grenze', serif;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .date {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    bottom: -400px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+  }
+
+  .fun {
+    position:absolute; 
+    top: 100px;
+    left: 25px;
+    width: 350px;
+    height: 350px;
+  }
+  /* End mobile label */
+}
+
+/* BEGIN MEDIUM WIDTH RULES */
+@media only screen and (min-width: 768px) {
+  .
+}
+  /* Code for medium width and bigger : */
+ 
+  /* Laptop label */
+  main::before {
+    content: 'Laptop';
+    background-color: #45454588;
+  }
+  
+  
+
+/* BEGIN WIDE SCREEN RULES */
+@media only screen and (min-width: 1200px) {
+  /* Code for wide screen only */
+  
+
+  /* Widescreen label */
+  main::before {
+    content: 'Wide';
+    background-color: #00438888;
+  }
+  .main {
+      width: 800px;
+      font-size: 100px;
+      align-items: center;
+      height: 100px;
+      margin: auto;
+      border-style:solid;
+      border: 30px;
+      background-color:black;
+      color: white;
+      font-family: 'Grenze', serif;
+      text-decoration: underline;
+    }
+    .the {
+      color: white;
+      font-size: 20px;
+      font-family: 'Grenze', serif;
+    }
+    .date { 
+      width: 800px;
+      font-size: 25px;
+      top: 600px;
+      height: 100px;
+  }
+    .fun {
+      position: absolute;
+      top: 500px;
+      left: 25px;
+      width: 800px;
+      height: 350px;
+  }
+
+  
+  
+  /* End widescreen label */
+}
+
+/* BACK TO CODE FOR ALL SIZES */
+
+/* Code to insert circular label label to show how responsive code is working on lower right */
+main::before {
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  color: #efefef;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-family: Helvetica, sans-serif;
+  font-size: 8pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
